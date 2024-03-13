@@ -1,10 +1,11 @@
 <script>
 import AppHeader from './components/AppHeader.vue';
+import { store } from './store';
 
 export default{
     data(){
         return{
-
+            store,
         }
     },
     components:{
@@ -16,8 +17,7 @@ export default{
 
 <template>
 
-    <AppHeader></AppHeader>
-    
+    <AppHeader :navLinks="store.navLinks"></AppHeader>
 
 </template>
 

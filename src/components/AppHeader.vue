@@ -1,6 +1,12 @@
 <script>
+import { store } from '../store';
+
 export default{
     name: 'AppHeader',
+
+    props:{
+        navLinks: Array,
+    },
 
     data(){
         return{
@@ -35,7 +41,26 @@ export default{
                 </div>
             </div>
             <nav>
-                
+                <div class="logo">
+                    <img src="../../public/imgs/logo.png" alt="">
+                </div>
+                <div class="nav-links">
+                    <ul>
+                        <li v-for="link in navLinks" :key="link.text">
+                            <a href="#">{{ link.text }}</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-button">
+                    <button class="btn-first">
+                        <i class="fa-solid fa-user"></i>
+                        LOG IN
+                    </button>
+                    <button class="btn-second">
+                        <i class="fa-solid fa-users"></i>
+                        SIGN UP
+                    </button>
+                </div>
             </nav>
         </div>
     </header>
@@ -50,36 +75,79 @@ export default{
 header{
     display: flex;
     justify-content: center;
-}
 
-.info{
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    border: 1px solid #2A3179;
-
-
-    .pers-info{
+    .info{
         display: flex;
         justify-content: space-between;
-
-        > * {
-            border: 1px solid #2A3179;
-            padding: 18px 44px;
+        align-items: stretch;
+        border: 1px solid #2A3179;
+    
+    
+        .pers-info{
+            display: flex;
+            justify-content: space-between;
+    
+            > * {
+                border: 1px solid #2A3179;
+                padding: 18px 44px;
+            }
+        }
+    
+        .social{
+            display: flex;
+            align-items: stretch;
+            
+            > * {
+                display: flex;
+                align-items: center;
+                border: 1px solid #2A3179;
+                padding: 18px 16px;
+            }
         }
     }
 
-    .social{
+    nav{
         display: flex;
-        align-items: stretch;
+        justify-content: space-between;
+        align-items: center;
         
-        > * {
+        ul{
             display: flex;
-            align-items: center;
-            border: 1px solid #2A3179;
-            padding: 18px 16px;
+            list-style-type: none;
+            gap: 20px;
+
+            a{
+                text-decoration: none;
+                text-transform: uppercase;
+                color: $textprimary;
+                font-weight: bold;
+            }
+        }
+
+        button{
+            padding: 16px 22px;
+            border: none;
+
+            &.btn-first{
+                background-color: $textprimary;
+                color: $primary;
+                box-shadow: 2px 2px 0 0 $primary;
+
+            }
+            
+            &.btn-second{
+                background-color: $primary;
+                box-shadow: 2px 2px 0 0 $textprimary;
+            }
+
+            &:hover{
+                box-shadow: 3px 3px 0 0;
+                transform: translate(-1px, -1px);
+                                    
+            }
         }
     }
 }
+
 
 </style>
