@@ -216,7 +216,6 @@ export default{
                 gap: 24px;
 
                 button{
-                    margin-top: 34px;
                     padding: 22px 30px;
                     border: none;
                     border-radius: 0.3em;

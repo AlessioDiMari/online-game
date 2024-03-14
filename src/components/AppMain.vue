@@ -5,6 +5,7 @@ import AppMainMatches from './AppMainMatches.vue';
 import AppMainShop from './AppMainShop.vue';
 import AppMainSectionT from './AppMainSectionT.vue'
 import AppMainStream from './AppMainStream.vue'
+import AppMainTestimonial from './AppMainTestimonial.vue'
 
 export default{
     name: 'AppMain',
@@ -16,6 +17,7 @@ export default{
         AppMainSectionT,
         AppMainStream,
         AppMainShop,
+        AppMainTestimonial
     }
 }
 </script>
@@ -28,6 +30,7 @@ export default{
         <AppMainSectionT></AppMainSectionT>
         <AppMainStream></AppMainStream>
         <AppMainShop></AppMainShop>
+        <AppMainTestimonial></AppMainTestimonial>
     </div>
 </template>
 
@@ -37,4 +40,4 @@ export default{
 
 
 
-</style>
+</style>./AppMainTestimonial.vue

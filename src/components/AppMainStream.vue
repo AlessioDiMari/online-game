@@ -74,7 +74,7 @@ export default{
                                 <i class="fa-solid fa-circle-play"></i>
                             </div>
                             <div class="play">
-                                <div class="btn-watch">
+                                <div class="btn">
                                     <button>
                                         watch now
                                         <i class="fa-solid fa-circle-play"></i>
@@ -138,6 +138,7 @@ export default{
             display: flex;
             flex-direction: column;
             padding: 34px 30px;
+            height: 100%;
 
             .play-button-static{
                 display: flex;
@@ -148,6 +149,32 @@ export default{
                     border: 34px solid rgba(255, 255, 255, 0.3);
                     border-radius: 50%;
 
+                }
+            }
+            
+            .stream-title{
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 1.2em;
+            }
+
+            button{
+                margin-top: 34px;
+                padding: 22px 30px;
+                border: none;
+                border-radius: 0.3em;
+                background-color: $primary;
+                color: white;
+                font-size: 1.1em;
+                text-transform: uppercase;
+                font-weight: bold;
+                box-shadow: 4px 4px 0 0 rgba(255, 255, 255, .4);
+
+                &:hover{
+                    cursor: pointer;
+                    box-shadow: -4px -4px 0 0 $primary;
+                    background-color: white;
+                    color: $primary;
                 }
             }
         }
@@ -164,6 +191,8 @@ export default{
                 background: $background;
             }
         }
+
+        
 
     }
 }

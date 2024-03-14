@@ -26,6 +26,7 @@ export default{
 
     img{
         object-fit: contain;
+        cursor: pointer;
     }
 }
 
