@@ -99,6 +99,12 @@ export default{
                     </div>
                 </div>
             </section>
+            <div class="btn">
+                <button>
+                    Become a partner
+                    <i class="fa-solid fa-circle-chevron-right"></i>
+                </button>
+            </div>
         </div>
     </div>
 </template>
@@ -178,7 +184,7 @@ export default{
     }
 
     .bottom{
-        margin-bottom: 120px;
+        margin-bottom: 20px;
 
 
         .partners{
@@ -195,6 +201,30 @@ export default{
         }
     }
 
+    .btn{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 120px;
+
+        button{
+            margin-top: 34px;
+            padding: 22px 30px;
+            border: none;
+            border-radius: 0.3em;
+            background-color: white;
+            color: $primary;
+            font-size: 1.1em;
+            text-transform: uppercase;
+            font-weight: bold;
+            box-shadow: 4px 4px 0 0 $primary;
+    
+            &:hover{
+                box-shadow: -4px -4px 0 0 $primary;
+                background-color: $textprimary;
+                color: $primary;
+            }
+        }
+    }
 
 }
 

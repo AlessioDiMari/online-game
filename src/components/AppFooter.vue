@@ -1,10 +1,16 @@
 <script>
+import SocialsComponent from './SocialsComponent.vue';
+
 export default{
     name: 'AppFooter',
 
     props:{
         footInfo: Array,
         footJackpots: Array,
+    },
+
+    components:{
+        SocialsComponent
     },
 
     data(){
@@ -34,6 +40,7 @@ export default{
                     <div class="foot-resume col">
                         <img src="../../public/imgs/logo.png" alt="">
                         <p>Upropriate brand economca sound technolog after covalent technology enable prospective wasting markets whereas propriate and brand economca sound technolog</p>
+                        <SocialsComponent></SocialsComponent>
                     </div>
                     <div class="jackpot col">
                         <h4>Top Jackpot Games</h4>
@@ -129,6 +136,10 @@ footer{
 
         .foot-resume img{
             margin-bottom: 50px;
+        }
+
+        .foot-resume p{
+            margin-bottom: 24px;
         }
     
         .jackpot h4{
