@@ -25,7 +25,7 @@ export default{
 </script>
 
 <template>
-    <div class="blog">
+    <div class="news">
         <div class="container">
             <div class="titles">
                 <small>
@@ -83,7 +83,7 @@ export default{
 @use '../styles/style.scss' as *;
 @use '../styles/_variables.scss' as *;
 
-.blog{
+.news{
     display: flex;
     justify-content: center;
     background-image: url('../../public/imgs/bg.png');

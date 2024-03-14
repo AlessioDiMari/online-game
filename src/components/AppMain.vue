@@ -6,6 +6,7 @@ import AppMainShop from './AppMainShop.vue';
 import AppMainSectionT from './AppMainSectionT.vue'
 import AppMainStream from './AppMainStream.vue'
 import AppMainTestimonial from './AppMainTestimonial.vue'
+import AppMainBlog from './AppMainBlog.vue'
 
 export default{
     name: 'AppMain',
@@ -17,7 +18,8 @@ export default{
         AppMainSectionT,
         AppMainStream,
         AppMainShop,
-        AppMainTestimonial
+        AppMainBlog,
+        AppMainTestimonial,
     }
 }
 </script>
@@ -30,6 +32,7 @@ export default{
         <AppMainSectionT></AppMainSectionT>
         <AppMainStream></AppMainStream>
         <AppMainShop></AppMainShop>
+        <AppMainBlog></AppMainBlog>
         <AppMainTestimonial></AppMainTestimonial>
     </div>
 </template>
