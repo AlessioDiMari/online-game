@@ -21,7 +21,7 @@ export default{
 
     <AppHeader :navLinks="store.navLinks"></AppHeader>
 
-    <AppFooter></AppFooter>
+    <AppFooter :footInfo="store.footInfo" :footJackpots="store.footJackpots"></AppFooter>
 
 </template>
 

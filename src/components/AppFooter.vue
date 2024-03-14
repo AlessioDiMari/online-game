@@ -2,6 +2,11 @@
 export default{
     name: 'AppFooter',
 
+    props:{
+        footInfo: Array,
+        footJackpots: Array,
+    },
+
     data(){
         return{
 
@@ -16,76 +21,30 @@ export default{
     <footer>
         <div class="container">
             <div class="foot-top">
-                <div class="foot-info">
+                <div v-for="info in footInfo" :key="info.info_name" class="foot-info">
                     <img src="../../public/imgs/icon-0.png" alt="">
                     <div class="info">
-                        <div class="info-name">Phone number: </div>
-                        <div class="info-cont">+8812345678912</div>
-                    </div>
-                </div>
-                <div class="foot-info">
-                    <img src="../../public/imgs/icon-0.png" alt="">
-                    <div class="info">
-                        <div class="info-name">Phone number: </div>
-                        <div class="info-cont">+8812345678912</div>
-                    </div>
-                </div>
-                <div class="foot-info">
-                    <img src="../../public/imgs/icon-0.png" alt="">
-                    <div class="info">
-                        <div class="info-name">Phone number: </div>
-                        <div class="info-cont">+8812345678912</div>
+                        <div class="info-name">{{ info.info_name }}: </div>
+                        <div class="info-cont">{{ info.info_cont }}</div>
                     </div>
                 </div>
             </div>
             <div class="foot-main">
+                <div class="foot-resume">
+                    <img src="../../public/imgs/logo.png" alt="">
+                    <p>Upropriate brand economca sound technolog after covalent technology enable prospective wasting markets whereas propriate </p>
+                </div>
                 <div class="jackpot">
                     <h4>Top Jackpot Games</h4>
                     <div class="games">
-                        <div class="game">
+                        <div v-for="game in footJackpots" :key="game.type" class="game">
                             <img src="../../public/imgs/01 (4).jpg" alt="">
                             <div class="game-info">
                                 <div class="name">
-                                    Free Poker game
+                                    {{ game.type }} Poker game
                                 </div>
                                 <div class="prize">
-                                    Poker: $230
-                                </div>
-                                <div class="vote">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="game">
-                            <img src="../../public/imgs/01 (4).jpg" alt="">
-                            <div class="game-info">
-                                <div class="name">
-                                    Free Poker game
-                                </div>
-                                <div class="prize">
-                                    Poker: $230
-                                </div>
-                                <div class="vote">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="game">
-                            <img src="../../public/imgs/01 (4).jpg" alt="">
-                            <div class="game-info">
-                                <div class="name">
-                                    Free Poker game
-                                </div>
-                                <div class="prize">
-                                    Poker: $230
+                                    Poker: {{ game.money }}
                                 </div>
                                 <div class="vote">
                                     <i class="fa-solid fa-star"></i>
@@ -98,123 +57,17 @@ export default{
                         </div>
                     </div>
                 </div>
-                <div class="jackpot">
-                    <h4>Top Jackpot Games</h4>
-                    <div class="games">
-                        <div class="game">
-                            <img src="../../public/imgs/01 (4).jpg" alt="">
-                            <div class="game-info">
-                                <div class="name">
-                                    Free Poker game
-                                </div>
-                                <div class="prize">
-                                    Poker: $230
-                                </div>
-                                <div class="vote">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="game">
-                            <img src="../../public/imgs/01 (4).jpg" alt="">
-                            <div class="game-info">
-                                <div class="name">
-                                    Free Poker game
-                                </div>
-                                <div class="prize">
-                                    Poker: $230
-                                </div>
-                                <div class="vote">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="game">
-                            <img src="../../public/imgs/01 (4).jpg" alt="">
-                            <div class="game-info">
-                                <div class="name">
-                                    Free Poker game
-                                </div>
-                                <div class="prize">
-                                    Poker: $230
-                                </div>
-                                <div class="vote">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </div>
-                            </div>
-                        </div>
+                <div class="foot-form">
+                    <h4>our newsletter</h4>
+                    <div class="caption">
+                        Gamer exports organization supported by community leaders
                     </div>
-                </div>
-                <div class="jackpot">
-                    <h4>Top Jackpot Games</h4>
-                    <div class="games">
-                        <div class="game">
-                            <img src="../../public/imgs/01 (4).jpg" alt="">
-                            <div class="game-info">
-                                <div class="name">
-                                    Free Poker game
-                                </div>
-                                <div class="prize">
-                                    Poker: $230
-                                </div>
-                                <div class="vote">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="game">
-                            <img src="../../public/imgs/01 (4).jpg" alt="">
-                            <div class="game-info">
-                                <div class="name">
-                                    Free Poker game
-                                </div>
-                                <div class="prize">
-                                    Poker: $230
-                                </div>
-                                <div class="vote">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="game">
-                            <img src="../../public/imgs/01 (4).jpg" alt="">
-                            <div class="game-info">
-                                <div class="name">
-                                    Free Poker game
-                                </div>
-                                <div class="prize">
-                                    Poker: $230
-                                </div>
-                                <div class="vote">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <input id="input-name" type="text">
+                    <input id="input-email" type="text">
+                    <button>
+                        send message
+                        <i class="fa-solid fa-circle-chevron-right"></i>
+                    </button>
                 </div>
             </div>
             <div class="foot-bottom">
