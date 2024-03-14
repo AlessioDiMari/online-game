@@ -4,6 +4,7 @@ import AppMainSectionF from './AppMainSectionF.vue';
 import AppMainMatches from './AppMainMatches.vue';
 import AppMainShop from './AppMainShop.vue';
 import AppMainSectionT from './AppMainSectionT.vue'
+import AppMainStream from './AppMainStream.vue'
 
 export default{
     name: 'AppMain',
@@ -12,8 +13,9 @@ export default{
         AppJumbo,
         AppMainSectionF,
         AppMainMatches,
+        AppMainSectionT,
+        AppMainStream,
         AppMainShop,
-        AppMainSectionT
     }
 }
 </script>
@@ -24,6 +26,7 @@ export default{
         <AppMainSectionF></AppMainSectionF>
         <AppMainMatches></AppMainMatches>
         <AppMainSectionT></AppMainSectionT>
+        <AppMainStream></AppMainStream>
         <AppMainShop></AppMainShop>
     </div>
 </template>
