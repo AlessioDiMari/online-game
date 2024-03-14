@@ -132,7 +132,6 @@ header{
                 background-color: $textprimary;
                 color: $primary;
                 box-shadow: 2px 2px 0 0 $primary;
-
             }
             
             &.btn-second{
@@ -142,8 +141,7 @@ header{
 
             &:hover{
                 box-shadow: 3px 3px 0 0;
-                transform: translate(-1px, -1px);
-                                    
+                transform: translate(-1px, -1px);                                  
             }
         }
     }
