@@ -51,6 +51,8 @@ export const store = reactive({
             type: 'royal',
             money: '$ 330',
         }
-    ]
+    ],
+
+    
 
 });

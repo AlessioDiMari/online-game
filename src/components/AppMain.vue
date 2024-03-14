@@ -1,7 +1,8 @@
 <script>
 import AppJumbo from './AppJumbo.vue';
 import AppMainSectionF from './AppMainSectionF.vue';
-import AppMainMatches from './AppMainMatches.vue'
+import AppMainMatches from './AppMainMatches.vue';
+import AppMainShop from './AppMainShop.vue';
 
 export default{
     name: 'AppMain',
@@ -9,7 +10,8 @@ export default{
     components:{
         AppJumbo,
         AppMainSectionF,
-        AppMainMatches
+        AppMainMatches,
+        AppMainShop
     }
 }
 </script>
@@ -19,6 +21,7 @@ export default{
         <AppJumbo></AppJumbo>
         <AppMainSectionF></AppMainSectionF>
         <AppMainMatches></AppMainMatches>
+        <AppMainShop></AppMainShop>
     </div>
 </template>
 
