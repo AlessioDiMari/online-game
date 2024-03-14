@@ -90,7 +90,7 @@ footer{
     justify-content: center;
     align-items: center;
     background-image: url('../../public/imgs/bg\ \(5\).jpg');
-    background-position: cover;
+    background-size: cover;
     background-repeat: no-repeat;
     
     .container{
@@ -191,7 +191,7 @@ footer{
                 &:hover{
                     color: $textprimary;
                     background-color: $primary;
-                    box-shadow: 0 0 2px 2px $textprimary;
+                    box-shadow: -2px -2px 0 0 $textprimary;
                     transform: translate(1px, 1px);                                    
                 }
             }
@@ -200,7 +200,7 @@ footer{
 
     .foot-bottom{
         padding: 44px;
-        background-color: $background;
+        background-color: $secondary;
         width: 100%;
         text-align: center;
     }

@@ -19,7 +19,7 @@ export default{
 
 <template>
     
-    <header>
+    <header class="header-fixed">
         <div class="container">
             <div class="info">
                 <div class="pers-info">
@@ -72,9 +72,17 @@ export default{
 @use '../styles/_variables.scss' as *;
 
 
+.header-fixed{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
 header{
     display: flex;
     justify-content: center;
+    background-color: rgba($color: #000000, $alpha: 0.5);
 
     .info{
         display: flex;

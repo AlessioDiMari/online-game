@@ -1,5 +1,6 @@
 <script>
 import AppHeader from './components/AppHeader.vue';
+import AppMain from './components/AppMain.vue';
 import AppFooter from './components/AppFooter.vue';
 import { store } from './store';
 
@@ -11,6 +12,7 @@ export default{
     },
     components:{
         AppHeader,
+        AppMain,
         AppFooter
     }
 }
@@ -20,6 +22,8 @@ export default{
 <template>
 
     <AppHeader :navLinks="store.navLinks"></AppHeader>
+
+    <AppMain></AppMain>
 
     <AppFooter :footInfo="store.footInfo" :footJackpots="store.footJackpots"></AppFooter>
 
