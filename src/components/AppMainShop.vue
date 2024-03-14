@@ -26,7 +26,28 @@ export default{
 
             partners:[
                 {
-                    
+                    partner_image: '../../public/imgs/01 (2).png'
+                },
+                {
+                    partner_image: '../../public/imgs/05.png'
+                },
+                {
+                    partner_image: '../../public/imgs/06.png'
+                },
+                {
+                    partner_image: '../../public/imgs/08.png'
+                },
+                {
+                    partner_image: '../../public/imgs/01 (2).png'
+                },
+                {
+                    partner_image: '../../public/imgs/05.png'
+                },
+                {
+                    partner_image: '../../public/imgs/06.png'
+                },
+                {
+                    partner_image: '../../public/imgs/08.png'
                 },
             ]
         }
@@ -47,7 +68,9 @@ export default{
                 </div>
                 <div class="products">
                     <div v-for="product in products" class="product">
-                        <img :src="product.image" alt="">
+                        <div class="img-wrapper">
+                            <img :src="product.image" alt="">
+                        </div>
                         <strong>{{ product.prod_color }} t-shirt here</strong>
                         <div class="prize">
                             $380.00
@@ -63,12 +86,17 @@ export default{
                 </div>
             </section>
             <hr>
-            <section>
+            <section class="bottom">
                 <div class="titles">
                     <small>we our partners</small>
                     <h3>
                         become ou partners
                     </h3>
+                </div>
+                <div class="partners">
+                    <div v-for="partner in partners" class="partner">
+                        <img :src="partner.partner_image" alt="">
+                    </div>
                 </div>
             </section>
         </div>
@@ -119,9 +147,28 @@ export default{
             width: calc(100% / 4 - 24px / 4 * 3);
             padding: 10px;
             background-color: $secondary;
-    
+            
+            .img-wrapper{
+                overflow: hidden;
+                background-color: white;
+            }
+
+            strong{
+                text-transform: uppercase;
+            }
+
             .vote{
                 margin-bottom: 20px;
+            }
+
+            &:hover{
+                cursor: pointer;
+                background-color: $primary;
+
+                img{
+                    transform: rotate(10deg);
+                    scale: 1.2;
+                }
             }
         }
     }
@@ -129,6 +176,25 @@ export default{
     hr{
         margin: 120px 0;
     }
+
+    .bottom{
+        margin-bottom: 120px;
+
+
+        .partners{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            row-gap: 48px;
+            column-gap: 170px;
+            flex-wrap: wrap;
+    
+            .partner{
+                width: calc(100% / 5 - 170px / 5 * 4);
+            }
+        }
+    }
+
 
 }
 
