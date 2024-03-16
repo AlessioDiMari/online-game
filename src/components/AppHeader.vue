@@ -73,7 +73,7 @@ export default{
 
 
 .header-fixed{
-    position: fixed;
+    position: absolute;
     top: 0;
     width: 100%;
     z-index: 1000;
@@ -106,11 +106,13 @@ header{
             align-items: stretch;
             
             > * {
+                cursor: pointer;
                 display: flex;
                 align-items: center;
                 border: 1px solid #2A3179;
                 padding: 18px 16px;
             }
+            
         }
     }
 
@@ -133,6 +135,7 @@ header{
         }
 
         button{
+            cursor: pointer;
             padding: 16px 22px;
             border: none;
 
@@ -148,8 +151,9 @@ header{
             }
 
             &:hover{
-                box-shadow: 3px 3px 0 0;
-                transform: translate(-1px, -1px);                                  
+                box-shadow: 4px 4px 0 0;
+                transform: translate(-1px, -1px);
+                transform: scale(1.05);                                  
             }
         }
     }

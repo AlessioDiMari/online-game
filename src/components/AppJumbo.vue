@@ -56,6 +56,7 @@ export default{
             }
 
             button{
+                cursor: pointer;
                 margin-top: 34px;
                 padding: 22px 30px;
                 border: none;

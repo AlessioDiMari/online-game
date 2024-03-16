@@ -219,9 +219,9 @@ export default{
             box-shadow: 4px 4px 0 0 $primary;
     
             &:hover{
-                box-shadow: -4px -4px 0 0 $primary;
-                background-color: $textprimary;
-                color: $primary;
+                box-shadow: -4px -4px 0 0 $textprimary;
+                background-color: $primary;
+                color: $textprimary;
             }
         }
     }

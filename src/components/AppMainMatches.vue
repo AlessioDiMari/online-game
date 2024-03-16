@@ -59,12 +59,14 @@ export default{
     <div class="wrapper">
         <div class="container">
             <div class="top">
-                <small>
-                    Anywhere, anytime
-                </small>
-                <h2>
-                    All mathches schedule
-                </h2>
+                <div class="titles">
+                    <small>
+                        Anywhere, anytime
+                    </small>
+                    <h2>
+                        All mathches schedule
+                    </h2>
+                </div>
                 <div class="match">
                     <div class="match-head">
                         <div class="p-quantity">
@@ -170,6 +172,22 @@ export default{
         align-items: center;
         margin-bottom: 100px;
 
+        .titles{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 48px;
+            text-transform: uppercase;
+
+            small{
+                color: $primary;
+            }
+
+            h3{
+                font-size: 1.7em;
+            }
+        }
+
     }
     
     .match{
@@ -216,6 +234,7 @@ export default{
                 gap: 24px;
 
                 button{
+                    cursor: pointer;
                     padding: 22px 30px;
                     border: none;
                     border-radius: 0.3em;
@@ -293,9 +312,9 @@ export default{
             box-shadow: 4px 4px 0 0 $primary;
     
             &:hover{
-                box-shadow: -4px -4px 0 0 $primary;
-                background-color: $textprimary;
-                color: $primary;
+                box-shadow: -4px -4px 0 0 $textprimary;
+                background-color: $primary;
+                color: $textprimary;
             }
         }
     }

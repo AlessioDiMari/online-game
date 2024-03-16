@@ -156,6 +156,7 @@ footer{
                 gap: 12px;
         
                 .game{
+                    cursor: pointer;
                     display: flex;
                     align-items: center;
                     gap: 10px;
@@ -190,6 +191,7 @@ footer{
             }
     
             button{
+                cursor: pointer;
                 border: none;
                 width: 50%;
                 padding: 16px 20px;

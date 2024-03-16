@@ -145,6 +145,7 @@ export default{
                 justify-content: center;
                 
                 i{
+                    cursor: pointer;
                     font-size: 60px;
                     border: 34px solid rgba(255, 255, 255, 0.3);
                     border-radius: 50%;

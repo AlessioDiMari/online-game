@@ -136,6 +136,7 @@ export default{
         justify-content: space-between;
 
         .game{
+            cursor: pointer;
             display: flex;
             gap: 16px;
             padding: 64px 38px;
@@ -156,6 +157,7 @@ export default{
         margin-top: 80px;
 
         button{
+            cursor: pointer;
             margin-top: 34px;
             padding: 22px 30px;
             border: none;
@@ -168,9 +170,9 @@ export default{
             box-shadow: 4px 4px 0 0 $primary;
     
             &:hover{
-                box-shadow: -4px -4px 0 0 $primary;
-                background-color: $textprimary;
-                color: $primary;
+                box-shadow: -4px -4px 0 0 $textprimary;
+                background-color: $primary;
+                color: $textprimary;
             }
         }
     }

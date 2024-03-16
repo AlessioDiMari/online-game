@@ -100,16 +100,20 @@ export default{
     background-color: #090E38;
     
     .titles{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-transform: uppercase;
-    
-        small{
-            color: $primary;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 48px;
+            text-transform: uppercase;
+
+            small{
+                color: $primary;
+            }
+
+            h3{
+                font-size: 1.7em;
+            }
         }
-    
-    }
 
     .teams{
         display: flex;
@@ -130,6 +134,7 @@ export default{
                 background-size: cover;
 
                 .team-img{
+                    cursor: pointer;
                     padding-top: 65px;
                     padding-bottom: 38px;
                 }
@@ -149,6 +154,7 @@ export default{
         padding-top: 120px;
 
         .container{
+            margin-bottom: 120px;
             flex-direction: row;
             background-image: url('../../public/imgs/bg\ \(4\).jpg');
 
@@ -173,6 +179,7 @@ export default{
                 }
 
                 button{
+                    cursor: pointer;
                     margin-top: 34px;
                     padding: 22px 30px;
                     border: none;
@@ -185,9 +192,9 @@ export default{
                     box-shadow: 4px 4px 0 0 $primary;
             
                     &:hover{
-                        box-shadow: -4px -4px 0 0 $primary;
-                        background-color: $textprimary;
-                        color: $primary;
+                        box-shadow: -4px -4px 0 0 $textprimary;
+                        background-color: $primary;
+                        color: $textprimary;
                     }
                 }
             }
